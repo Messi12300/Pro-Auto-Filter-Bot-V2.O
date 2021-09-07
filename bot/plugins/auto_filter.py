@@ -209,7 +209,7 @@ async def auto_filter(bot, update):
             await bot.send_photo(
                 chat_id = update.chat.id,
                 photo= MASSAGE_PHOTO,
-                caption=f"<b>➡️𝐓𝐨𝐭𝐞𝐥 𝐅𝐢𝐥𝐞𝐬 :- {(len_results)} </b>\n<b>➡️𝐌𝐨𝐯𝐢𝐞 𝐍𝐚𝐦𝐞 :-</b> <code>{query}</code>\n<b>👤Requested By</b> {update.from_user.mention}",
+                caption=f"<b>➡️𝐓𝐨𝐭𝐞𝐥 𝐅𝐢𝐥𝐞𝐬 :- {(len_results)} </b>\n<b>➡️𝐌𝐨𝐯𝐢𝐞 𝐍𝐚𝐦𝐞 :-</b> <code>{query}</code>\n<b>",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id

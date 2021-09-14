@@ -62,7 +62,7 @@ async def auto_filter(bot, update):
     if filters:
         results.append(
                 [
-                    InlineKeyboardButton("📢 Join My Main Channel 📢", url=f"https://t.me/{MT_CHANNEL}")
+                    InlineKeyboardButton("📣 Join My Main Channel 📣", url=f"https://t.me/MalluCinemas_Official")
                 ]
             )
         for filter in filters: # iterating through each files
@@ -152,7 +152,7 @@ async def auto_filter(bot, update):
         if len_result != 1:
             result[0].append(
                 [
-                    InlineKeyboardButton("Next➡️", callback_data=f"navigate(0|next|{query})")
+                    InlineKeyboardButton(">>>>", callback_data=f"navigate(0|next|{query})")
                 ]
             )
         
@@ -209,7 +209,7 @@ async def auto_filter(bot, update):
             await bot.send_photo(
                 chat_id = update.chat.id,
                 photo= MASSAGE_PHOTO,
-                caption=f"<b>➡️𝐓𝐨𝐭𝐞𝐥 𝐅𝐢𝐥𝐞𝐬 :- {(len_results)} </b>\n<b>➡️𝐌𝐨𝐯𝐢𝐞 𝐍𝐚𝐦𝐞 :-</b> <code>{query}</code>\n<b>",
+                caption=f"<b>🗂️𝐓𝐨𝐭𝐞𝐥 𝐅𝐢𝐥𝐞𝐬 :- {(len_results)} </b>\n<b>🎥𝐌𝐨𝐯𝐢𝐞 𝐍𝐚𝐦𝐞 :-</b> <code>{query}</code>\n<b>\n\n©️𝐌𝐚𝐥𝐥𝐮 𝐂𝐢𝐧𝐞𝐦𝐚𝐬",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id

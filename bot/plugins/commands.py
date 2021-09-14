@@ -23,7 +23,8 @@ async def start(bot, update):
         except UserNotParticipant:
             #await update.reply_text(f"Join @{update_channel} To Use Me")
             await update.reply_text(
-                text="<b>🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹</b>",
+                text="<b>നീ ഏതാ മോനൂസെ എന്നെ 𝐌𝐚𝐥𝐥𝐮 𝐂𝐢𝐧𝐞𝐦𝐚𝐬 ഗ്രൂപ്പിൽ മാത്രമേ ഉപയോഗിക്കാൻ പറ്റൂ...
+വെറുതെ സമയം കളയാൻ നിൽക്കണ്ട...വേഗം ഗ്രൂപ്പിലേക്ക് വിട്ടോ സിനിമ അവിടെ കിട്ടും...🤭</b>",
                 reply_markup=InlineKeyboardMarkup([
                     [ InlineKeyboardButton(text=" 📢 Join My Update Channel 📢", url=f"https://t.me/{MT_UPDATE}")]
               ])
@@ -55,7 +56,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Search More 🔎', url=f"t.me/{MT_UPDATES}"
+                                    'Search More 🔎', url=f"https://t.me/malayalammoviesdownloader"
                                 )
                         ]
                     ]
